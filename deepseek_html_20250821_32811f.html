@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak WhatsApp Tower 6 - Gedung Rusun ASN 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #25D366, #128C7E, #075E54);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo i {
+            font-size: 60px;
+            color: #25D366;
+        }
+        
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            width: 250px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #fff;
+        }
+        
+        .contact-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .contact-number {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            direction: ltr;
+        }
+        
+        .whatsapp-btn {
+            background-color: #fff;
+            color: #25D366;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #25D366;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .instructions h2 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .contact-card {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .contact-list {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    
+    <header>
+        <h1>Kontak WhatsApp Tower 6</h1>
+        <p class="description">Gedung Rusun ASN 2 KIPP IKN - Building Management</p>
+    </header>
+    
+    <div class="container">
+        <div class="contact-list">
+            <div class="contact-card" onclick="openWhatsApp('6282148116396', 'Alfrida Mata Raga')">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="contact-name">Alfrida Mata Raga</div>
+                <div class="contact-number">0821-4811-6396</div>
+                <a class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+            
+            <div class="contact-card" onclick="openWhatsApp('6285705150957', 'Novita Ayu Limbongan')">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="contact-name">Novita Ayu Limbongan</div>
+                <div class="contact-number">0857-0515-0957</div>
+                <a class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+            
+            <div class="contact-card" onclick="openWhatsApp('6282323394893', 'Jesika Chatrine Patiung')">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="contact-name">Jesika Chatrine Patiung</div>
+                <div class="contact-number">0823-2339-4893</div>
+                <a class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2>Cara Menggunakan:</h2>
+            <ol>
+                <li>Klik pada kartu kontak yang ingin Anda hubungi</li>
+                <li>Anda akan diarahkan ke aplikasi WhatsApp</li>
+                <li>Kirim pesan Anda langsung ke kontak tersebut</li>
+                <li>Pastikan Anda telah menginstal WhatsApp di perangkat Anda</li>
+            </ol>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Gedung Rusun ASN 2 KIPP IKN - Building Management</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk membuka WhatsApp
+        function openWhatsApp(number, name) {
+            if (confirm(`Buka chat WhatsApp dengan ${name}?`)) {
+                // Format nomor untuk WhatsApp (hilangkan karakter non-digit)
+                const formattedNumber = number.replace(/\D/g, '');
+                window.open(`https://wa.me/${formattedNumber}`, '_blank');
+            }
+        }
+        
+        // Menambahkan efek ketika elemen diklik
+        document.querySelectorAll('.contact-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+        
+        // Animasi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.contact-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+        });
+    </script>
+</body>
+</html>
